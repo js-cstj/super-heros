@@ -24,11 +24,9 @@ export default class App {
 		];
 		var tbody = table.appendChild(document.createElement("tbody"));
 		tbody.style.backgroundColor = "lightcyan";
-		for (let i = 0; i < simpleHeros.length; i += 1) {
-			let gauche = i;
-			let droite = simpleHeros[i];
-			tbody.appendChild(this.rangee(gauche, droite));
-		}
+		var gauche = "Superélève";
+		var droite = "Rita Raté";
+		tbody.appendChild(this.rangee(gauche, droite));
 		/////////////////////////////////////////////////////////////
 		// TABLEAUX COORDONNÉS
 		/////////////////////////////////////////////////////////////
@@ -55,11 +53,9 @@ export default class App {
 
 		var tbody = table.appendChild(document.createElement("tbody"));
 		tbody.style.backgroundColor = "lightsteelblue";
-		for (let i = 0; i < coordHeros.length; i += 1) {
-			let gauche = coordEgos[i];
-			let droite = coordHeros[i];
-			tbody.appendChild(this.rangee(gauche, droite));
-		}
+		var gauche = "Superélève";
+		var droite = "Rita Raté";
+		tbody.appendChild(this.rangee(gauche, droite));
 		/////////////////////////////////////////////////////////////
 		// TABLEAU DE TABLEAUX
 		/////////////////////////////////////////////////////////////
@@ -75,11 +71,9 @@ export default class App {
 		];
 		var tbody = table.appendChild(document.createElement("tbody"));
 		tbody.style.backgroundColor = "lightgreen";
-		for (let i = 0; i < tTableaux.length; i += 1) {
-			let gauche = tTableaux[i][1];
-			let droite = tTableaux[i][0];
-			tbody.appendChild(this.rangee(gauche, droite));
-		}
+		var gauche = "Superélève";
+		var droite = "Rita Raté";
+		tbody.appendChild(this.rangee(gauche, droite));
 		/////////////////////////////////////////////////////////////
 		// TABLEAU D'OBJETS
 		/////////////////////////////////////////////////////////////
@@ -95,11 +89,9 @@ export default class App {
 		];
 		var tbody = table.appendChild(document.createElement("tbody"));
 		tbody.style.backgroundColor = "lightpink";
-		for (let i = 0; i < tObjets.length; i += 1) {
-			let gauche = tObjets[i].alterego;
-			let droite = tObjets[i].nom;
-			tbody.appendChild(this.rangee(gauche, droite));
-		}
+		var gauche = "Superélève";
+		var droite = "Rita Raté";
+		tbody.appendChild(this.rangee(gauche, droite));
 		/////////////////////////////////////////////////////////////
 		// OBJET GÉNÉRIQUE
 		/////////////////////////////////////////////////////////////
@@ -115,11 +107,9 @@ export default class App {
 		};
 		var tbody = table.appendChild(document.createElement("tbody"));
 		tbody.style.backgroundColor = "lightyellow";
-		for (let i in objHeros) {
-			let gauche = objHeros[i];
-			let droite = i;
-			tbody.appendChild(this.rangee(gauche, droite));
-		}
+		var gauche = "Superélève";
+		var droite = "Rita Raté";
+		tbody.appendChild(this.rangee(gauche, droite));
 		/////////////////////////////////////////////////////////////
 		// AUTRE BOUCLE
 		/////////////////////////////////////////////////////////////
@@ -129,21 +119,17 @@ export default class App {
 		var tbody = table.appendChild(document.createElement("tbody"));
 		tbody.style.backgroundColor = "darkcyan";
 		tbody.style.color = "white";
-		simpleHeros.forEach((hero, i) => {
-			let gauche = i;
-			let droite = hero;
-			tbody.appendChild(this.rangee(gauche, droite));
-		})
+		var gauche = "Superélève";
+		var droite = "Rita Raté";
+		tbody.appendChild(this.rangee(gauche, droite));
 
 		// Avec tObjets
 		var tbody = table.appendChild(document.createElement("tbody"));
 		tbody.style.backgroundColor = "darkred";
 		tbody.style.color = "white";
-		tObjets.forEach(hero => {
-			let gauche = hero.alterego;
-			let droite = hero.nom;
-			tbody.appendChild(this.rangee(gauche, droite));
-		})
+		var gauche = "Superélève";
+		var droite = "Rita Raté";
+		tbody.appendChild(this.rangee(gauche, droite));
 	}
 	/**
 	 * Retourne une rangée de tableau (tr) avec 2 cellules
