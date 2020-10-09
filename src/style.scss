@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+html {
+	height: 100%;
+	font-size: 16px;
+	font-family: arial;
+}
+body {
+	height: 100%;
+	margin: 0;
+}
+#interface {
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	& > header, & > footer {
+		font-family: 'Audiowide', cursive;
+		padding: .5em 1em;
+		background-color: darkmagenta;
+		color: white;
+		display: flex;
+		justify-content: space-between;
+		font-size: 1.5em;
+		line-height: 1;
+	}
+	& > header {
+		order: -1000;
+		h1 {
+			margin: 0;
+		}
+	}
+	& > footer {
+		order: 1000;
+		font-size: smaller;
+	}
+}
+
+#app {
+	padding: 1em;
+}
+
+table.heros {
+	border: 1px solid black;
+	border-collapse: collapse;
+	th, td {
+		border: 1px solid black;
+		padding: .25em 1em;
+	}
+	th {
+		text-align: right;
+	}
+	tbody {
+		border: 3px solid black;
+		&:nth-child(odd) {
+			background-color: #EEE;
+		}
+	}
+}

@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+html {
+  height: 100%;
+  font-size: 16px;
+  font-family: arial;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#interface {
+  min-height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+}
+
+#interface > header, #interface > footer {
+  font-family: 'Audiowide', cursive;
+  padding: .5em 1em;
+  background-color: darkmagenta;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.5em;
+  line-height: 1;
+}
+
+#interface > header {
+  -webkit-box-ordinal-group: -999;
+      -ms-flex-order: -1000;
+          order: -1000;
+}
+
+#interface > header h1 {
+  margin: 0;
+}
+
+#interface > footer {
+  -webkit-box-ordinal-group: 1001;
+      -ms-flex-order: 1000;
+          order: 1000;
+  font-size: smaller;
+}
+
+#app {
+  padding: 1em;
+}
+
+table.heros {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table.heros th, table.heros td {
+  border: 1px solid black;
+  padding: .25em 1em;
+}
+
+table.heros th {
+  text-align: right;
+}
+
+table.heros tbody {
+  border: 3px solid black;
+}
+
+table.heros tbody:nth-child(odd) {
+  background-color: #EEE;
+}
+/*# sourceMappingURL=style.css.map */
